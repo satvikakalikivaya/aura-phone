@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura One – Payment</title>
+  <style>
+    body {margin:0; font-family: Arial, sans-serif; background:linear-gradient(135deg,#0d1b4c,#4b0082); color:#fff;}
+    .container {max-width:500px; margin:80px auto; padding:30px; background:rgba(255,255,255,0.1); border-radius:15px; backdrop-filter: blur(8px);}
+    h2 {text-align:center; margin-bottom:20px;}
+    label {display:block; margin:15px 0 5px;}
+    input {width:100%; padding:12px; border:none; border-radius:8px;}
+    .btn {margin-top:20px; width:100%; padding:15px; border:none; border-radius:50px; background:#ff2e7e; color:#fff; font-size:1.1em; cursor:pointer;}
+    .btn:hover {background:#ff4da6;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Secure Payment</h2>
+    <form action="thankyou.html">
+      <label>Card Number</label>
+      <input type="text" required placeholder="1234 5678 9012 3456">
+      <label>Expiry Date</label>
+      <input type="text" required placeholder="MM/YY">
+      <label>CVV</label>
+      <input type="password" required placeholder="123">
+      <label>Cardholder Name</label>
+      <input type="text" required placeholder="John Doe">
+      <button class="btn" type="submit">Proceed to Pay $999</button>
+    </form>
+  </div>
+</body>
+</html>
